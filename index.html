@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          spacing: {
+            1: "8px",
+            2: "12px",
+            3: "16px",
+            4: "24px",
+            5: "32px",
+            6: "48px",
+            xl: "100px",
+          },
+          fontFamily: {
+            inter: ["Inter"],
+          },
+          colors: {
+            chaerul: "#09a2a5",
+          },
+        },
+      },
+    };
+  </script>
+  <script src="script.js"></script>
+  <style type="text/tailwindcss">
+
+  </style>
+</head>
+
+<body class="dark:bg-slate-800 dark:text-slate-200">
+  <button onclick="toggleDarkMode()"
+    class="mb-2 px-4 py-2 bg-slate-800 text-white rounded-full hover:bg-slate-950 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600  flex float-right mt-3 mr-7">
+    Dark
+  </button>
+  <h1 class="text-8xl text-center font-bold my-10">
+    Mari Belajar <span
+      class="bg-gradient-to-r from-red-500 to bg-white-600 bg-clip-text text-transparent">Tailwindcss</span>
+  </h1>
+
+
+  <section class="mb-10 bg-gradient-to-br from-indigo-500 via-red-400 to-yellow-600">
+    <h2 class="text-3xl text-center">Spacing</h2>
+    <div class="m-xl">Margin</div>
+    <div class="py-8 ">Padding</div>
+  </section>
+
+  <section class="mb-10 bg-green-200">
+    <h2>Sizing</h2>
+    <div class="w-32 h-32 bg-yellow-300">Kotak 1</div>
+  </section>
+
+  <section class="font-inter max-w-3xl mx-auto">
+    <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typhograpy</h2>
+
+    <div class="mb-4 text-lg text-gray-500">
+      By <a href="" class="text-gray-600 font-semibold">Chaerul Hidayat</a>,
+      27 July 2024
+    </div>
+    <p class="mb-4">
+      Lorem ipsum dolor sit amet
+      <a href="" class="underline font-semibold text-blue-600">consectetur </a>adipisicing elit. Repellat eum soluta
+      voluptatem voluptate. Fugiat,
+      placeat non corrupti quidem sequi expedita praesentium ipsam ipsum
+      numquam sapiente delectus deserunt, corporis cupiditate, tempore nam
+      veritatis? Officia, accusantium pariatur explicabo adipisci debitis
+      magnam ab, voluptatibus veniam consequatur deserunt perferendis
+      laboriosam veritatis. Illum, iusto nam.
+    </p>
+    <blockquote class="mb-4 italic font-thin text-xl">
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A ex ipsa
+      aliquam quam vitae tempora architecto, rem accusamus dicta minus?""
+    </blockquote>
+    <p class="mb-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo saepe
+      obcaecati tempore quasi, aperiam cupiditate magnam in quis magni
+      perferendis aut modi pariatur qui autem voluptate, numquam atque
+      voluptatibus excepturi!
+    </p>
+  </section>
+
+  <div class="max-w-xl h-96 bg-[#bada55] mx-auto overflow-y-scroll bg-local" style="background-image: url(bas.jpg);">
+    <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas non, ratione qui numquam quos
+      vitae voluptate harum? Ducimus asperiores illo ab commodi nemo veritatis dolor sit corporis iusto iste. Sapiente
+      voluptatibus unde reprehenderit cumque eius accusamus ipsam explicabo placeat nihil fugiat, provident doloribus ea
+      sequi voluptate perferendis aliquam obcaecati dolor ex voluptatum quaerat tempora et. Architecto beatae similique
+      molestias harum vitae eius voluptatibus amet saepe veniam placeat nisi, earum ea, quibusdam voluptates est
+      officiis velit, reiciendis quis magnam hic nemo inventore delectus veritatis. Vero animi error nulla quos
+      blanditiis, reprehenderit earum ratione voluptate nemo, deleniti dignissimos in quidem amet assumenda temporibus
+      commodi dolore molestiae incidunt quasi cumque? Ipsa debitis eveniet doloremque voluptates in labore magni iusto
+      natus quasi facilis architecto libero nesciunt repellat suscipit veritatis dolor alias, iure ex distinctio
+      quisquam dignissimos earum perspiciatis voluptatibus culpa. In dignissimos quia fugit eos velit voluptatum dolor
+      minima consequuntur non possimus mollitia tempore rerum explicabo ex repellat, nostrum vitae commodi, quidem esse!
+      Molestias error mollitia debitis quia illo quod nihil ex, veritatis dolorum aut iusto consectetur similique
+      laborum in! Nam quod officiis explicabo reprehenderit, excepturi, alias qui rem eaque dicta obcaecati totam
+      dolores repudiandae dolorem distinctio temporibus autem dolor non eligendi repellat vitae.</p>
+  </div>
+
+  <div
+    class="mt-32 bg-slate-300 mx-auto max-w-xl h-96 bg-cover rounded-2xl shadow-xl shadow-teal-200 overflow-hidden border-8 flex"
+    style="background-image: url(image/23.jpg);">
+    <!-- <div class="w-full h-full bg-blue-300 mix-blend-multiply"></div> -->
+    <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-md rounded-full hover:backdrop-blur-none"></div>
+  </div>
+
+  <hr class="my-20">
+
+
+
+
+  <button
+    class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring dark:group-hover:text-slate-800 dark:group-hover:bg-slate-100 group-hover:text-white ">Simpan</button>
+
+  </div>
+
+  <div
+    class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group font-serif">
+    <h5 class="mb-2 font-bold text-slate-700 text-lg group-hover:text-white">My Card</h5>
+    <p
+      class="text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim corrupti odit dolorum voluptas facilis possimus!
+      Sunt iste, ex dolores esse distinctio aliquid, error velit, sapiente inventore temporibus repellendus delectus
+      harum.</p>
+  </div>
+
+  <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter">
+    <form action="">
+      <label for="email">
+        <span
+          class="block font-semibold text-slate-700 mb-1 after:content-['*'] after:text-pink-500 after:ml-0.5">Email</span>
+        <input type="email" name="email" id="email" placeholder="Masukan Email..."
+          class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer">
+      </label>
+      <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible ">Email tidak valid</p>
+    </form>
+
+  </div>
+
+
+  <hr class="my-20">
+
+  <div
+    class="w-40 h-40  bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-45 hover:translate-x-40 transition hover:bg-purple-600 text-center">
+    ❤️</div>
+
+  <div class="w-40 h-40  mx-auto rounded-lg mt-3 group">
+    <div class="w-full h-full bg-sky-600 rounded-lg group-hover:rotate-180 origin-top-right transition duration-1000 ">
+    </div>
+  </div>
+
+  <div class="w-40 h-40  bg-pink-500 mx-auto rounded-lg shadow-lg mt-5 animate-none"></div>
+
+  <hr class="my-20 border-t-4">
+
+  <div class="container px-8 mx-auto">
+    <div class="border rounded-lg shadow-lg p-10 relative">
+      <div class="w-8 h-8 rounded-full bg-sky-200 flex fixed bottom-5 right-5"><a href="#"
+          class="text-xl mx-auto cursor-pointer ">🔝</a></div>
+      <img src="image/2.jpg" alt="rumah" width="150px" class="rounded-lg float-left mr-3 ">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum dolore voluptates delectus quidem odio, illum
+        ipsum voluptatem laborum ab quod cumque harum minima aspernatur vel, dolorum qui nam at, facilis quia natus ea
+        nesciunt aut? Distinctio odit adipisci illo magnam id reiciendis suscipit explicabo error, facere ipsum
+        doloribus sint ea temporibus ut doloremque excepturi, voluptatem consequatur iusto sapiente magni quia nobis
+        repudiandae pariatur est? Expedita ducimus, fugiat esse perspiciatis dolorem est voluptas vel dolorum libero
+        pariatur mollitia fugit ea. Cumque quas placeat nobis rem vitae qui quisquam provident expedita quis dolores.
+        Deleniti adipisci consectetur culpa ipsum natus earum quia consequuntur.</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto border rounded-xl shadow-lg p-10 mt-20 columns-3">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <img src="image/23.jpg" alt="rumah" width="200px" class="mb-4 rounded-lg">
+    <p class="text-sm text-center font-bold font-serif "></p>
+  </div>
+
+  <hr class="my-24 border-t-4">
+
+  <div class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
+    <div class="lg:p-12 lg:flex-1">
+      <h3 class="text-3xl font-bold text-slate-800 sm:text-4xl md:text-6xl dark:text-white">Chae<span
+          class="text-sky-500">rul</span> Hidayat</h3>
+      <img
+        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Laptop"
+        class="mt-4 rounded-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover md:object-cover md:w-full sm:object-center lg:hidden">
+      <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:text-3xl sm:mt-8">Mari Belajar Programing Bersama Sama
+      </h2>
+      <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl dark:text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iste natus iusto ea ipsum enim earum in
+        distinctio a debitis voluptas tempore, eum inventore,
+      </p>
+      <div class="mt-4 sm:mt-6">
+        <a href="#"
+          class="inline-block px-5 py-3 bg-red-600 rounded-xl text-white shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base hover:bg-red-800">Subscribe
+          Channel Youtube</a>
+      </div>
+    </div>
+    <div class="hidden lg:flex lg:w-1/2">
+      <img
+        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="laptop" class="rounded-l-3xl object-cover">
+    </div>
+  </div>
+  <h2 class="mt-24 mb-10 font-bold text-3xl text-center text-slate-700 dark:text-white">My Gallery</h2>
+  <div class="container mx-auto px-2 font-inter sm:flex sm:flex-wrap sm:gap-2 sm:justify-evenly  sm:px-4">
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 bg-white md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full blur-xl hover:blur-none">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 bg-white sm:mb-0 md:w-80 lg:w-64">
+      <img src="bas.jpg" alt="Gunung" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700">
+          Image Tittle
+        </div>
+        <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+    <h2 class="text-xl h-16 font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Wellcome to Grid</span></h2>
+    <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@chaerulhidayat</span></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/4.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/5.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/6.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/7.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/8.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/9.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('image/10.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+    </div>
+  </div>
+  <div class="mb-96"></div>
+
+
+</body>
+
+</html>
